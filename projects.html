@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Virendrasing Morkar</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="index.html" class="logo">Portfolio</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="mobile-nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      <section>
+        <h2 class="page-title">My Projects</h2>
+        
+        <p style="margin-bottom: 40px;">Throughout my academic and professional journey, I've worked on various engineering projects that demonstrate my technical skills, problem-solving abilities, and creativity. Below are some of my key projects:</p>
+        
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="https://source.unsplash.com/random/600x400/?hvac,engineering" alt="Energy-Efficient HVAC System">
+            </div>
+            <div class="project-content">
+              <h3> Vacuum Cleaner Robot</h3>
+              <p> A robotic vacuum cleaner, sometimes called a robovac or a Roomba as a
+                generic trademark, is an autonomous robotic vacuum cleaner which has a
+                limited vacuum floor cleaning system combined with sensors and robotic
+                drives with programmable controllers and cleaning routines. Early designs
+                included manual operation via remote control and a "self-drive" mode
+                which allowed the machine to clean autonomously.</p>
+              <div class="project-tags">
+                <span class="tag">Thermodynamics</span>
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Sustainability</span>
+              </div>
+              <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-img">
+              <img src="https://source.unsplash.com/random/600x400/?robot,automation" alt="Automated Part Sorting System">
+            </div>
+            <div class="project-content">
+              <h3> “Design and Manufacturing of Automatic Switching Control in Hybrid Vehicle System
+                for two-wheeler”</h3>
+              <p>This project focuses on designing and manufacturing an automatic switching control system for a hybrid two-wheeler. The system aims
+                to optimize fuel consumption and performance by seamlessly switching between the electric motor and internal combustion engine
+                based on real-time factors like speed, load, and battery charge. This is achieved by developing a sophisticated control algorithm and
+                integrating it with the vehicle's powertrain components.</p>
+              <div class="project-tags">
+                <span class="tag">Automation</span>
+                <span class="tag">Arduino</span>
+                <span class="tag">Computer Vision</span>
+              </div>
+              <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+                                     
+              <div style="background: url('https://source.unsplash.com/random/800x600/?hvac,engineering') no-repeat center center/cover;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Virendrasing Morkar</h3>
+          <p>Mechanical Engineering Student</p>
+          <p>MIT Academy of Engineering</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/virendrasing-morkar-179539255?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bd3NZ66vhTCmS9nygs0%2FbFg%3D%3D" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certificates.html">Certificates</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <span>morkarvirendra@gmail.com</span>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-phone"></i>
+            <span>+91 8975878359</span>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Pune</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Virendrasing Morkar. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    mobileNavToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      const icon = mobileNavToggle.querySelector('i');
+      if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+    
+    // Add animation to project cards when they enter viewport
+    const observerOptions = {
+      threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    document.querySelectorAll('.project-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>
